@@ -16,15 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     function escondeElementosHeader() {
-        document.getElementById('logoDisney').classList.add('hidden')
-        document.getElementById('assineAgora').classList.add('hidden')
-        document.getElementById('header').classList.add('header--hidden')
+        const header = document.querySelector('header')
+        header.classList.add("header--is-hidden");
     }
 
     function mostraElementosHeader() {
-        document.getElementById('logoDisney').classList.remove('hidden')
-        document.getElementById('assineAgora').classList.remove('hidden')
-        document.getElementById('header').classList.remove('header--hidden')
+        const header = document.querySelector('header')
+        header.classList.remove("header--is-hidden");
     }
 
     // Seção de atrações abas
