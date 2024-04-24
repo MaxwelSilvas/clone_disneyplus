@@ -18,7 +18,7 @@ function images() {
 function scripts() {
     return gulp.src("./src/scripts/*.js")
     .pipe(uglify())
-    .pipe(gulp.dest("./dist/js"))
+    .pipe(gulp.dest("./dist/scripts"))
 }
 
 exports.default = gulp.parallel(styles, images, scripts);
